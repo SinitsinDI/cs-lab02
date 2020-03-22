@@ -17,14 +17,19 @@ poisk[1]=a-b;
 poisk[2]=a*b;
 poisk[3]=a/b;
 double max=poisk[0];
+double min=poisk[0];
     for(size_t i=0;i<3;i++)
     {
         if (max<poisk[i+1])
         {
             max=poisk[i+1];
         }
+		if (min>poisk[i + 1])
+		{
+			min=poisk[i + 1];
+		}
     }
 cout <<"max="<<max<<'\n';
-    return 0;
-
+cout << "min=" << min << '\n';
+return 0;
 }
